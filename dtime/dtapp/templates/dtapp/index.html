@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+    <title>Attendees</title>
+</head>
+<body>
+    <h2>List of Attendees</h2>
+    <ul>
+        {% for dtapp in dtapp %}
+        <li>{{ dtapp.first_name }} - {{ dtapp.last_name }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
